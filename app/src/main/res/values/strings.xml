@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MireaApp</string>
+
+    <string name="msg_event_scheduled">Добавлено в расписание!</string>
+
+    <string name="news">Новости</string>
+    <string name="schedule">Расписание</string>
+    <string name="profile">Профиль</string>
+    <string name="teachers">Преподаватели</string>
+
+    <string name="info">Информация</string>
+    <string name="subjects">Предметы</string>
+    <string name="control_form">Форма контроля</string>
+    <string name="exam">Экзамен</string>
+    <string name="test">Зачет</string>
+    <string name="settings">Настройки</string>
+    <string name="date">Дата: %1s</string>
+    <string name="week">Неделя</string>
+    <string name="month">Месяц</string>
+    <string name="theme">Тема</string>
+    <string name="no_lessons">Пар нет!</string>
+
+    <string name="action_register">Зарегистрироваться</string>
+    <string name="action_add_to_schedule">Добавить в расписание</string>
+
+    <string name="hint_enter_name">Начните вводить фамилию</string>
+</resources>

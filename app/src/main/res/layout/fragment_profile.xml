@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp">
+
+        <TextView
+            style="@style/tabTitle"
+            android:text="@string/profile" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            tools:srcCompat="@drawable/user" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:text="Марина Машкина" />
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            tools:text="mashkina.m.a@edu.mirea.ru" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:alpha="0.5"
+            android:text="@string/info"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSubjects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/roundedButtonWithDrawable"
+            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/ic_books"
+            android:text="@string/subjects" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnTeachers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/roundedButtonWithDrawable"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_people"
+            android:text="@string/teachers" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/roundedButtonWithDrawable"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_settings"
+            android:text="@string/settings" />
+
+    </LinearLayout>
+
+</ScrollView>

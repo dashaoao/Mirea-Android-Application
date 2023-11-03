@@ -1,0 +1,60 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+}
+
+android {
+    namespace 'com.example.mireaapp'
+    compileSdk buildConfig.compileSdk
+
+    defaultConfig {
+        applicationId "com.example.mashkinacoursework"
+        minSdk buildConfig.minSdk
+        targetSdk buildConfig.targetSdk
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation deps.androidx.core
+    implementation deps.androidx.appcompat
+    implementation deps.androidx.constraintlayout
+    implementation deps.androidx.activity
+
+    implementation deps.material
+    implementation deps.coil
+    implementation deps.calendar
+    implementation deps.flexbox
+
+    implementation deps.coil
+
+    implementation deps.koin
+
+    implementation deps.cicerone
+
+    implementation deps.gson
+
+    implementation deps.room.runtime
+    implementation deps.room.ktx
+    kapt deps.room.kapt
+}

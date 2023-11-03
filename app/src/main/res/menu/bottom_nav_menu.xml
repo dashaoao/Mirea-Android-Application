@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/miEvents"
+        android:icon="@drawable/ic_newspaper"
+        android:title="@string/news" />
+
+    <item
+        android:id="@+id/miSchedule"
+        android:icon="@drawable/ic_calendar"
+        android:title="@string/schedule" />
+
+    <item
+        android:id="@+id/miProfile"
+        android:icon="@drawable/ic_person"
+        android:title="@string/profile" />
+
+</menu>
